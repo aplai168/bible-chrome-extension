@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Tab A Verse!</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        /*background-color: lightblue;*/
+        background-image: url("1.jpg");
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+    <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="jquery-3.2.1.slim.min.js"/>
+  </head>
+  <body>
+    <!-- <div id="status"></div>
+    <img id="image-result" hidden> -->
+  <h1>HI YAY!</h1>
+    <p>
+      Lord, you have organized and orchestrated for Alice to get this job. She is working beside and with these particular coworkers. You don't waste anything. Please help her get to know her coworkers and open up their hearts to her. Give her wisdom day by day as she faces new situations, and restore her soul each morning as she spends time with you. Help her to keep that routine solid. Use her to make an impact for you in her workplace, because a light has entered the darkness. Amen.
+    </p>
+  </body>
+</html>
